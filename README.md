@@ -1,23 +1,38 @@
-# Council-Sustainability-Report
+# Council Sustainability Report
 
-## Report workbook
+## Master workbook
 
-Use **Labels.xlsx** as the single master Excel workbook for all future expenditure, IO mapping and footprint work. The standalone Resident_Annual_Expenditure.xlsx has been consolidated into this workbook.
+Use **Labels.xlsx** for all Excel changes. Original course inputs are `row labels`, `IntermediateDemand`, `Output`, and the first row of `Satellite`. Satellite row 6 contains the user's added emissions sum. Do not overwrite the user's matrix formulas.
 
-- Original inputs: `row labels`, `IntermediateDemand`, `Output`, `Satellite` (preserved).
-- `Annual expenditure`: monthly personal amounts and annualisation formulas.
-- `Expenditure assumptions`: resident profile, boundaries and unresolved valuation assumptions.
-- `Expenditure split`: mixed categories split into explicit allocations to the original sector IDs.
-- `IO_345 demand`: all 345 sectors in original order, aggregated personal AUD, provisional AUD-million demand, and linked x/Q.
-- `IO_345 table`: labelled 345-by-345 view linked to the supplied intermediate-demand matrix.
-- `Validation`: raw, split and mapped totals, sector count and allocation-share checks.
+Resident: one hypothetical adult in a two-adult shared apartment in Redfern, City of Sydney; no private car; mainly public transport. Period: November 2025–October 2026. Annual personal expenditure: **AUD 29,760**. The 40 split allocations are explicit illustrative assumptions.
 
-Baseline: AUD 29,760 per person per year; 40 allocation rows. All expenditure and allocation shares are illustrative assumptions. Monthly amounts already represent the individual's share. Source allocation shares must sum to one; validation differences must be zero. Recalculate in Excel after edits. Adding source/split rows requires updating the relevant formula ranges.
+- `Annual expenditure`, `Expenditure assumptions`: expenditure, annualisation and personal allocation.
+- `Expenditure split`: allocations to original sector IDs; shares per source must total one.
+- `IO_345 demand`: all 345 sectors, annual AUD and provisional AUD-million demand.
+- `IO_345 table`: labelled view of the supplied 345 × 345 intermediate-demand matrix.
+- `Validation`: expenditure, share and sector-count reconciliation.
 
-The demand vector remains provisional: purchaser/basic-price differences, margins/taxes, insurance service valuation and adjustment to 2018 prices are unresolved. No footprint has been calculated. Do not add retail margins on top of the same product spending or interpret this mapping as a verified basic-price demand vector.
+## Excel matrix workflow (updated to the user's formulas)
 
-## Provisional footprint calculation
+1. `𝐗 ̂`: diagonal output matrix, `MUNIT(345) * Output!A1:A345` (array formula).
+2. `𝐗 ̂ inverse`: `MINVERSE(Xhat)` (array formula).
+3. `A coefficients`: `A_ij = T_ij / x_j`, algebraically equivalent to `MMULT(T, Xhat inverse)`. This sheet retains the user's column-normalisation formulas.
+4. `L matrix`: `MINVERSE(MUNIT(345) - A)` (array formula).
+5. `q matrix`: `MMULT(Q, Xhat inverse)` (array formula).
+6. `m matrix`: `MMULT(q, L)` (array formula).
+7. `Footprint sectors`: links to the q and m matrices. Consumption contributions are `m_j * y_j * 1000` in tonnes; induced output uses `MMULT(L_row, y)` and emitting-sector contributions are `q_i * (Ly)_i * 1000`.
+8. `Footprint summary`: total and top-10 baseline ranking/chart; re-sort the ranking if spending changes. `Footprint checks`: algebraic checks.
 
-`Labels.xlsx` now includes `A coefficients`, `L inverse`, `Footprint sectors`, `Footprint summary` (top-10 chart) and `Footprint checks`. Baseline provisional IO supply-chain estimate: **9.543 t CO2-e/person/year**. This is not a final, valuation-adjusted inventory. No country comparison or separate household direct-gas combustion estimate has been added.
+All matrix links are internal to Labels.xlsx. No external workbook is required. Use Excel recalculation; L is **no longer a Python-generated numeric snapshot**. Preserve array ranges (345 × 345 or 1 × 345); do not edit individual spill/output cells. The old `scripts/update_footprint.py` generator has been removed because it would overwrite this workflow.
 
-To refresh the numerical Leontief inverse and chart ranking after changing inputs, run `python scripts/update_footprint.py` from this repository with NumPy and openpyxl installed. Source T/x/Q worksheets are preserved exactly. Excel formulas link the expenditure vector to contributions; **L is a numeric snapshot and must be regenerated after T/x changes**. Reopen/recalculate Excel after edits. Formula errors, allocation-share checks and boundary limitations must be reviewed before final use. Changes to sector labels/IDs require a mapping review. The script checks algebraic consistency; it does not resolve pricing or accounting-boundary assumptions.
+Run `python scripts/validate_workbook.py` for a **read-only** independent audit (NumPy/openpyxl). It validates saved/cached results after Excel recalculation and never changes formulas. It does not resolve accounting assumptions.
+
+Baseline provisional supply-chain estimate: **9.543 t CO2-e/person/year**. Nominal 2025–26 purchaser spending is applied to 2018 sector intensities. Price conversion, taxes/margins, insurance service valuation and household direct combustion remain unresolved. Do not describe this as a complete inventory or directly compare it with territorial CO2 statistics.
+
+## Calculation evidence
+
+`Evidence S1`–`Evidence S7` in Labels.xlsx are linked, printable evidence views. Their source ranges and actual matrix formulas are identified. They show expenditure, all split allocations, active demand sectors (the full workbook retains 345), matrix construction, q/m/footprint results, validation, and sector hotspots.
+
+The `evidence/` directory contains PNG snapshots exported from those actual spreadsheet views, a PDF of the same views, a read-only audit report, and source/caption notes. These are LibreOffice Calc renderings of the Excel workbook, not Microsoft Excel application-window screenshots. Representative matrix excerpts are explicitly labelled; a whole 345 × 345 matrix is intentionally not shrunk into one image. The Word supplementary section includes these images.
+
+Australian/international per-capita comparison (Lecture 10, p. 14) remains a required **unfinished** task. No comparison values or charts have been invented; the evidence does not claim that requirement is complete.

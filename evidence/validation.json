@@ -1,0 +1,1417 @@
+{
+  "status": "passed",
+  "workbook_sha256": "7719bb599f2c727056dd9d3dd6531686c989b8a6b957e9ad8b4046f5c10e49f7",
+  "provisional_t_co2e_per_person_year": 9.54302184706136,
+  "independent_numpy_t_co2e": 9.543021847061356,
+  "max_inverse_residual": 5.995204332975845e-15,
+  "formula_errors": [],
+  "excel_array_formulas": {
+    "𝐗 ̂!A1": {
+      "range": "A1:MG345",
+      "formula": "=_xlfn.MUNIT(345)*Output!A1:A345"
+    },
+    "𝐗 ̂ inverse!A1": {
+      "range": "A1:MG345",
+      "formula": "=MINVERSE('𝐗 ̂'!A1:MG345)"
+    },
+    "L matrix!B2": {
+      "range": "B2:MH346",
+      "formula": "=MINVERSE(_xlfn.MUNIT(345)-'A coefficients'!B2:MH346)"
+    },
+    "q matrix!B2": {
+      "range": "B2:MH2",
+      "formula": "=MMULT(Satellite!A1:MG1,'𝐗 ̂ inverse'!A1:MG345)"
+    },
+    "m matrix!B2": {
+      "range": "B2:MH2",
+      "formula": "=MMULT('q matrix'!B2:MH2,'L matrix'!B2:MH346)"
+    },
+    "Footprint sectors!I2": {
+      "range": "I2",
+      "formula": "=MMULT('L matrix'!B2:MH2,$D$2:$D$346)"
+    },
+    "Footprint sectors!I3": {
+      "range": "I3",
+      "formula": "=MMULT('L matrix'!B3:MH3,$D$2:$D$346)"
+    },
+    "Footprint sectors!I4": {
+      "range": "I4",
+      "formula": "=MMULT('L matrix'!B4:MH4,$D$2:$D$346)"
+    },
+    "Footprint sectors!I5": {
+      "range": "I5",
+      "formula": "=MMULT('L matrix'!B5:MH5,$D$2:$D$346)"
+    },
+    "Footprint sectors!I6": {
+      "range": "I6",
+      "formula": "=MMULT('L matrix'!B6:MH6,$D$2:$D$346)"
+    },
+    "Footprint sectors!I7": {
+      "range": "I7",
+      "formula": "=MMULT('L matrix'!B7:MH7,$D$2:$D$346)"
+    },
+    "Footprint sectors!I8": {
+      "range": "I8",
+      "formula": "=MMULT('L matrix'!B8:MH8,$D$2:$D$346)"
+    },
+    "Footprint sectors!I9": {
+      "range": "I9",
+      "formula": "=MMULT('L matrix'!B9:MH9,$D$2:$D$346)"
+    },
+    "Footprint sectors!I10": {
+      "range": "I10",
+      "formula": "=MMULT('L matrix'!B10:MH10,$D$2:$D$346)"
+    },
+    "Footprint sectors!I11": {
+      "range": "I11",
+      "formula": "=MMULT('L matrix'!B11:MH11,$D$2:$D$346)"
+    },
+    "Footprint sectors!I12": {
+      "range": "I12",
+      "formula": "=MMULT('L matrix'!B12:MH12,$D$2:$D$346)"
+    },
+    "Footprint sectors!I13": {
+      "range": "I13",
+      "formula": "=MMULT('L matrix'!B13:MH13,$D$2:$D$346)"
+    },
+    "Footprint sectors!I14": {
+      "range": "I14",
+      "formula": "=MMULT('L matrix'!B14:MH14,$D$2:$D$346)"
+    },
+    "Footprint sectors!I15": {
+      "range": "I15",
+      "formula": "=MMULT('L matrix'!B15:MH15,$D$2:$D$346)"
+    },
+    "Footprint sectors!I16": {
+      "range": "I16",
+      "formula": "=MMULT('L matrix'!B16:MH16,$D$2:$D$346)"
+    },
+    "Footprint sectors!I17": {
+      "range": "I17",
+      "formula": "=MMULT('L matrix'!B17:MH17,$D$2:$D$346)"
+    },
+    "Footprint sectors!I18": {
+      "range": "I18",
+      "formula": "=MMULT('L matrix'!B18:MH18,$D$2:$D$346)"
+    },
+    "Footprint sectors!I19": {
+      "range": "I19",
+      "formula": "=MMULT('L matrix'!B19:MH19,$D$2:$D$346)"
+    },
+    "Footprint sectors!I20": {
+      "range": "I20",
+      "formula": "=MMULT('L matrix'!B20:MH20,$D$2:$D$346)"
+    },
+    "Footprint sectors!I21": {
+      "range": "I21",
+      "formula": "=MMULT('L matrix'!B21:MH21,$D$2:$D$346)"
+    },
+    "Footprint sectors!I22": {
+      "range": "I22",
+      "formula": "=MMULT('L matrix'!B22:MH22,$D$2:$D$346)"
+    },
+    "Footprint sectors!I23": {
+      "range": "I23",
+      "formula": "=MMULT('L matrix'!B23:MH23,$D$2:$D$346)"
+    },
+    "Footprint sectors!I24": {
+      "range": "I24",
+      "formula": "=MMULT('L matrix'!B24:MH24,$D$2:$D$346)"
+    },
+    "Footprint sectors!I25": {
+      "range": "I25",
+      "formula": "=MMULT('L matrix'!B25:MH25,$D$2:$D$346)"
+    },
+    "Footprint sectors!I26": {
+      "range": "I26",
+      "formula": "=MMULT('L matrix'!B26:MH26,$D$2:$D$346)"
+    },
+    "Footprint sectors!I27": {
+      "range": "I27",
+      "formula": "=MMULT('L matrix'!B27:MH27,$D$2:$D$346)"
+    },
+    "Footprint sectors!I28": {
+      "range": "I28",
+      "formula": "=MMULT('L matrix'!B28:MH28,$D$2:$D$346)"
+    },
+    "Footprint sectors!I29": {
+      "range": "I29",
+      "formula": "=MMULT('L matrix'!B29:MH29,$D$2:$D$346)"
+    },
+    "Footprint sectors!I30": {
+      "range": "I30",
+      "formula": "=MMULT('L matrix'!B30:MH30,$D$2:$D$346)"
+    },
+    "Footprint sectors!I31": {
+      "range": "I31",
+      "formula": "=MMULT('L matrix'!B31:MH31,$D$2:$D$346)"
+    },
+    "Footprint sectors!I32": {
+      "range": "I32",
+      "formula": "=MMULT('L matrix'!B32:MH32,$D$2:$D$346)"
+    },
+    "Footprint sectors!I33": {
+      "range": "I33",
+      "formula": "=MMULT('L matrix'!B33:MH33,$D$2:$D$346)"
+    },
+    "Footprint sectors!I34": {
+      "range": "I34",
+      "formula": "=MMULT('L matrix'!B34:MH34,$D$2:$D$346)"
+    },
+    "Footprint sectors!I35": {
+      "range": "I35",
+      "formula": "=MMULT('L matrix'!B35:MH35,$D$2:$D$346)"
+    },
+    "Footprint sectors!I36": {
+      "range": "I36",
+      "formula": "=MMULT('L matrix'!B36:MH36,$D$2:$D$346)"
+    },
+    "Footprint sectors!I37": {
+      "range": "I37",
+      "formula": "=MMULT('L matrix'!B37:MH37,$D$2:$D$346)"
+    },
+    "Footprint sectors!I38": {
+      "range": "I38",
+      "formula": "=MMULT('L matrix'!B38:MH38,$D$2:$D$346)"
+    },
+    "Footprint sectors!I39": {
+      "range": "I39",
+      "formula": "=MMULT('L matrix'!B39:MH39,$D$2:$D$346)"
+    },
+    "Footprint sectors!I40": {
+      "range": "I40",
+      "formula": "=MMULT('L matrix'!B40:MH40,$D$2:$D$346)"
+    },
+    "Footprint sectors!I41": {
+      "range": "I41",
+      "formula": "=MMULT('L matrix'!B41:MH41,$D$2:$D$346)"
+    },
+    "Footprint sectors!I42": {
+      "range": "I42",
+      "formula": "=MMULT('L matrix'!B42:MH42,$D$2:$D$346)"
+    },
+    "Footprint sectors!I43": {
+      "range": "I43",
+      "formula": "=MMULT('L matrix'!B43:MH43,$D$2:$D$346)"
+    },
+    "Footprint sectors!I44": {
+      "range": "I44",
+      "formula": "=MMULT('L matrix'!B44:MH44,$D$2:$D$346)"
+    },
+    "Footprint sectors!I45": {
+      "range": "I45",
+      "formula": "=MMULT('L matrix'!B45:MH45,$D$2:$D$346)"
+    },
+    "Footprint sectors!I46": {
+      "range": "I46",
+      "formula": "=MMULT('L matrix'!B46:MH46,$D$2:$D$346)"
+    },
+    "Footprint sectors!I47": {
+      "range": "I47",
+      "formula": "=MMULT('L matrix'!B47:MH47,$D$2:$D$346)"
+    },
+    "Footprint sectors!I48": {
+      "range": "I48",
+      "formula": "=MMULT('L matrix'!B48:MH48,$D$2:$D$346)"
+    },
+    "Footprint sectors!I49": {
+      "range": "I49",
+      "formula": "=MMULT('L matrix'!B49:MH49,$D$2:$D$346)"
+    },
+    "Footprint sectors!I50": {
+      "range": "I50",
+      "formula": "=MMULT('L matrix'!B50:MH50,$D$2:$D$346)"
+    },
+    "Footprint sectors!I51": {
+      "range": "I51",
+      "formula": "=MMULT('L matrix'!B51:MH51,$D$2:$D$346)"
+    },
+    "Footprint sectors!I52": {
+      "range": "I52",
+      "formula": "=MMULT('L matrix'!B52:MH52,$D$2:$D$346)"
+    },
+    "Footprint sectors!I53": {
+      "range": "I53",
+      "formula": "=MMULT('L matrix'!B53:MH53,$D$2:$D$346)"
+    },
+    "Footprint sectors!I54": {
+      "range": "I54",
+      "formula": "=MMULT('L matrix'!B54:MH54,$D$2:$D$346)"
+    },
+    "Footprint sectors!I55": {
+      "range": "I55",
+      "formula": "=MMULT('L matrix'!B55:MH55,$D$2:$D$346)"
+    },
+    "Footprint sectors!I56": {
+      "range": "I56",
+      "formula": "=MMULT('L matrix'!B56:MH56,$D$2:$D$346)"
+    },
+    "Footprint sectors!I57": {
+      "range": "I57",
+      "formula": "=MMULT('L matrix'!B57:MH57,$D$2:$D$346)"
+    },
+    "Footprint sectors!I58": {
+      "range": "I58",
+      "formula": "=MMULT('L matrix'!B58:MH58,$D$2:$D$346)"
+    },
+    "Footprint sectors!I59": {
+      "range": "I59",
+      "formula": "=MMULT('L matrix'!B59:MH59,$D$2:$D$346)"
+    },
+    "Footprint sectors!I60": {
+      "range": "I60",
+      "formula": "=MMULT('L matrix'!B60:MH60,$D$2:$D$346)"
+    },
+    "Footprint sectors!I61": {
+      "range": "I61",
+      "formula": "=MMULT('L matrix'!B61:MH61,$D$2:$D$346)"
+    },
+    "Footprint sectors!I62": {
+      "range": "I62",
+      "formula": "=MMULT('L matrix'!B62:MH62,$D$2:$D$346)"
+    },
+    "Footprint sectors!I63": {
+      "range": "I63",
+      "formula": "=MMULT('L matrix'!B63:MH63,$D$2:$D$346)"
+    },
+    "Footprint sectors!I64": {
+      "range": "I64",
+      "formula": "=MMULT('L matrix'!B64:MH64,$D$2:$D$346)"
+    },
+    "Footprint sectors!I65": {
+      "range": "I65",
+      "formula": "=MMULT('L matrix'!B65:MH65,$D$2:$D$346)"
+    },
+    "Footprint sectors!I66": {
+      "range": "I66",
+      "formula": "=MMULT('L matrix'!B66:MH66,$D$2:$D$346)"
+    },
+    "Footprint sectors!I67": {
+      "range": "I67",
+      "formula": "=MMULT('L matrix'!B67:MH67,$D$2:$D$346)"
+    },
+    "Footprint sectors!I68": {
+      "range": "I68",
+      "formula": "=MMULT('L matrix'!B68:MH68,$D$2:$D$346)"
+    },
+    "Footprint sectors!I69": {
+      "range": "I69",
+      "formula": "=MMULT('L matrix'!B69:MH69,$D$2:$D$346)"
+    },
+    "Footprint sectors!I70": {
+      "range": "I70",
+      "formula": "=MMULT('L matrix'!B70:MH70,$D$2:$D$346)"
+    },
+    "Footprint sectors!I71": {
+      "range": "I71",
+      "formula": "=MMULT('L matrix'!B71:MH71,$D$2:$D$346)"
+    },
+    "Footprint sectors!I72": {
+      "range": "I72",
+      "formula": "=MMULT('L matrix'!B72:MH72,$D$2:$D$346)"
+    },
+    "Footprint sectors!I73": {
+      "range": "I73",
+      "formula": "=MMULT('L matrix'!B73:MH73,$D$2:$D$346)"
+    },
+    "Footprint sectors!I74": {
+      "range": "I74",
+      "formula": "=MMULT('L matrix'!B74:MH74,$D$2:$D$346)"
+    },
+    "Footprint sectors!I75": {
+      "range": "I75",
+      "formula": "=MMULT('L matrix'!B75:MH75,$D$2:$D$346)"
+    },
+    "Footprint sectors!I76": {
+      "range": "I76",
+      "formula": "=MMULT('L matrix'!B76:MH76,$D$2:$D$346)"
+    },
+    "Footprint sectors!I77": {
+      "range": "I77",
+      "formula": "=MMULT('L matrix'!B77:MH77,$D$2:$D$346)"
+    },
+    "Footprint sectors!I78": {
+      "range": "I78",
+      "formula": "=MMULT('L matrix'!B78:MH78,$D$2:$D$346)"
+    },
+    "Footprint sectors!I79": {
+      "range": "I79",
+      "formula": "=MMULT('L matrix'!B79:MH79,$D$2:$D$346)"
+    },
+    "Footprint sectors!I80": {
+      "range": "I80",
+      "formula": "=MMULT('L matrix'!B80:MH80,$D$2:$D$346)"
+    },
+    "Footprint sectors!I81": {
+      "range": "I81",
+      "formula": "=MMULT('L matrix'!B81:MH81,$D$2:$D$346)"
+    },
+    "Footprint sectors!I82": {
+      "range": "I82",
+      "formula": "=MMULT('L matrix'!B82:MH82,$D$2:$D$346)"
+    },
+    "Footprint sectors!I83": {
+      "range": "I83",
+      "formula": "=MMULT('L matrix'!B83:MH83,$D$2:$D$346)"
+    },
+    "Footprint sectors!I84": {
+      "range": "I84",
+      "formula": "=MMULT('L matrix'!B84:MH84,$D$2:$D$346)"
+    },
+    "Footprint sectors!I85": {
+      "range": "I85",
+      "formula": "=MMULT('L matrix'!B85:MH85,$D$2:$D$346)"
+    },
+    "Footprint sectors!I86": {
+      "range": "I86",
+      "formula": "=MMULT('L matrix'!B86:MH86,$D$2:$D$346)"
+    },
+    "Footprint sectors!I87": {
+      "range": "I87",
+      "formula": "=MMULT('L matrix'!B87:MH87,$D$2:$D$346)"
+    },
+    "Footprint sectors!I88": {
+      "range": "I88",
+      "formula": "=MMULT('L matrix'!B88:MH88,$D$2:$D$346)"
+    },
+    "Footprint sectors!I89": {
+      "range": "I89",
+      "formula": "=MMULT('L matrix'!B89:MH89,$D$2:$D$346)"
+    },
+    "Footprint sectors!I90": {
+      "range": "I90",
+      "formula": "=MMULT('L matrix'!B90:MH90,$D$2:$D$346)"
+    },
+    "Footprint sectors!I91": {
+      "range": "I91",
+      "formula": "=MMULT('L matrix'!B91:MH91,$D$2:$D$346)"
+    },
+    "Footprint sectors!I92": {
+      "range": "I92",
+      "formula": "=MMULT('L matrix'!B92:MH92,$D$2:$D$346)"
+    },
+    "Footprint sectors!I93": {
+      "range": "I93",
+      "formula": "=MMULT('L matrix'!B93:MH93,$D$2:$D$346)"
+    },
+    "Footprint sectors!I94": {
+      "range": "I94",
+      "formula": "=MMULT('L matrix'!B94:MH94,$D$2:$D$346)"
+    },
+    "Footprint sectors!I95": {
+      "range": "I95",
+      "formula": "=MMULT('L matrix'!B95:MH95,$D$2:$D$346)"
+    },
+    "Footprint sectors!I96": {
+      "range": "I96",
+      "formula": "=MMULT('L matrix'!B96:MH96,$D$2:$D$346)"
+    },
+    "Footprint sectors!I97": {
+      "range": "I97",
+      "formula": "=MMULT('L matrix'!B97:MH97,$D$2:$D$346)"
+    },
+    "Footprint sectors!I98": {
+      "range": "I98",
+      "formula": "=MMULT('L matrix'!B98:MH98,$D$2:$D$346)"
+    },
+    "Footprint sectors!I99": {
+      "range": "I99",
+      "formula": "=MMULT('L matrix'!B99:MH99,$D$2:$D$346)"
+    },
+    "Footprint sectors!I100": {
+      "range": "I100",
+      "formula": "=MMULT('L matrix'!B100:MH100,$D$2:$D$346)"
+    },
+    "Footprint sectors!I101": {
+      "range": "I101",
+      "formula": "=MMULT('L matrix'!B101:MH101,$D$2:$D$346)"
+    },
+    "Footprint sectors!I102": {
+      "range": "I102",
+      "formula": "=MMULT('L matrix'!B102:MH102,$D$2:$D$346)"
+    },
+    "Footprint sectors!I103": {
+      "range": "I103",
+      "formula": "=MMULT('L matrix'!B103:MH103,$D$2:$D$346)"
+    },
+    "Footprint sectors!I104": {
+      "range": "I104",
+      "formula": "=MMULT('L matrix'!B104:MH104,$D$2:$D$346)"
+    },
+    "Footprint sectors!I105": {
+      "range": "I105",
+      "formula": "=MMULT('L matrix'!B105:MH105,$D$2:$D$346)"
+    },
+    "Footprint sectors!I106": {
+      "range": "I106",
+      "formula": "=MMULT('L matrix'!B106:MH106,$D$2:$D$346)"
+    },
+    "Footprint sectors!I107": {
+      "range": "I107",
+      "formula": "=MMULT('L matrix'!B107:MH107,$D$2:$D$346)"
+    },
+    "Footprint sectors!I108": {
+      "range": "I108",
+      "formula": "=MMULT('L matrix'!B108:MH108,$D$2:$D$346)"
+    },
+    "Footprint sectors!I109": {
+      "range": "I109",
+      "formula": "=MMULT('L matrix'!B109:MH109,$D$2:$D$346)"
+    },
+    "Footprint sectors!I110": {
+      "range": "I110",
+      "formula": "=MMULT('L matrix'!B110:MH110,$D$2:$D$346)"
+    },
+    "Footprint sectors!I111": {
+      "range": "I111",
+      "formula": "=MMULT('L matrix'!B111:MH111,$D$2:$D$346)"
+    },
+    "Footprint sectors!I112": {
+      "range": "I112",
+      "formula": "=MMULT('L matrix'!B112:MH112,$D$2:$D$346)"
+    },
+    "Footprint sectors!I113": {
+      "range": "I113",
+      "formula": "=MMULT('L matrix'!B113:MH113,$D$2:$D$346)"
+    },
+    "Footprint sectors!I114": {
+      "range": "I114",
+      "formula": "=MMULT('L matrix'!B114:MH114,$D$2:$D$346)"
+    },
+    "Footprint sectors!I115": {
+      "range": "I115",
+      "formula": "=MMULT('L matrix'!B115:MH115,$D$2:$D$346)"
+    },
+    "Footprint sectors!I116": {
+      "range": "I116",
+      "formula": "=MMULT('L matrix'!B116:MH116,$D$2:$D$346)"
+    },
+    "Footprint sectors!I117": {
+      "range": "I117",
+      "formula": "=MMULT('L matrix'!B117:MH117,$D$2:$D$346)"
+    },
+    "Footprint sectors!I118": {
+      "range": "I118",
+      "formula": "=MMULT('L matrix'!B118:MH118,$D$2:$D$346)"
+    },
+    "Footprint sectors!I119": {
+      "range": "I119",
+      "formula": "=MMULT('L matrix'!B119:MH119,$D$2:$D$346)"
+    },
+    "Footprint sectors!I120": {
+      "range": "I120",
+      "formula": "=MMULT('L matrix'!B120:MH120,$D$2:$D$346)"
+    },
+    "Footprint sectors!I121": {
+      "range": "I121",
+      "formula": "=MMULT('L matrix'!B121:MH121,$D$2:$D$346)"
+    },
+    "Footprint sectors!I122": {
+      "range": "I122",
+      "formula": "=MMULT('L matrix'!B122:MH122,$D$2:$D$346)"
+    },
+    "Footprint sectors!I123": {
+      "range": "I123",
+      "formula": "=MMULT('L matrix'!B123:MH123,$D$2:$D$346)"
+    },
+    "Footprint sectors!I124": {
+      "range": "I124",
+      "formula": "=MMULT('L matrix'!B124:MH124,$D$2:$D$346)"
+    },
+    "Footprint sectors!I125": {
+      "range": "I125",
+      "formula": "=MMULT('L matrix'!B125:MH125,$D$2:$D$346)"
+    },
+    "Footprint sectors!I126": {
+      "range": "I126",
+      "formula": "=MMULT('L matrix'!B126:MH126,$D$2:$D$346)"
+    },
+    "Footprint sectors!I127": {
+      "range": "I127",
+      "formula": "=MMULT('L matrix'!B127:MH127,$D$2:$D$346)"
+    },
+    "Footprint sectors!I128": {
+      "range": "I128",
+      "formula": "=MMULT('L matrix'!B128:MH128,$D$2:$D$346)"
+    },
+    "Footprint sectors!I129": {
+      "range": "I129",
+      "formula": "=MMULT('L matrix'!B129:MH129,$D$2:$D$346)"
+    },
+    "Footprint sectors!I130": {
+      "range": "I130",
+      "formula": "=MMULT('L matrix'!B130:MH130,$D$2:$D$346)"
+    },
+    "Footprint sectors!I131": {
+      "range": "I131",
+      "formula": "=MMULT('L matrix'!B131:MH131,$D$2:$D$346)"
+    },
+    "Footprint sectors!I132": {
+      "range": "I132",
+      "formula": "=MMULT('L matrix'!B132:MH132,$D$2:$D$346)"
+    },
+    "Footprint sectors!I133": {
+      "range": "I133",
+      "formula": "=MMULT('L matrix'!B133:MH133,$D$2:$D$346)"
+    },
+    "Footprint sectors!I134": {
+      "range": "I134",
+      "formula": "=MMULT('L matrix'!B134:MH134,$D$2:$D$346)"
+    },
+    "Footprint sectors!I135": {
+      "range": "I135",
+      "formula": "=MMULT('L matrix'!B135:MH135,$D$2:$D$346)"
+    },
+    "Footprint sectors!I136": {
+      "range": "I136",
+      "formula": "=MMULT('L matrix'!B136:MH136,$D$2:$D$346)"
+    },
+    "Footprint sectors!I137": {
+      "range": "I137",
+      "formula": "=MMULT('L matrix'!B137:MH137,$D$2:$D$346)"
+    },
+    "Footprint sectors!I138": {
+      "range": "I138",
+      "formula": "=MMULT('L matrix'!B138:MH138,$D$2:$D$346)"
+    },
+    "Footprint sectors!I139": {
+      "range": "I139",
+      "formula": "=MMULT('L matrix'!B139:MH139,$D$2:$D$346)"
+    },
+    "Footprint sectors!I140": {
+      "range": "I140",
+      "formula": "=MMULT('L matrix'!B140:MH140,$D$2:$D$346)"
+    },
+    "Footprint sectors!I141": {
+      "range": "I141",
+      "formula": "=MMULT('L matrix'!B141:MH141,$D$2:$D$346)"
+    },
+    "Footprint sectors!I142": {
+      "range": "I142",
+      "formula": "=MMULT('L matrix'!B142:MH142,$D$2:$D$346)"
+    },
+    "Footprint sectors!I143": {
+      "range": "I143",
+      "formula": "=MMULT('L matrix'!B143:MH143,$D$2:$D$346)"
+    },
+    "Footprint sectors!I144": {
+      "range": "I144",
+      "formula": "=MMULT('L matrix'!B144:MH144,$D$2:$D$346)"
+    },
+    "Footprint sectors!I145": {
+      "range": "I145",
+      "formula": "=MMULT('L matrix'!B145:MH145,$D$2:$D$346)"
+    },
+    "Footprint sectors!I146": {
+      "range": "I146",
+      "formula": "=MMULT('L matrix'!B146:MH146,$D$2:$D$346)"
+    },
+    "Footprint sectors!I147": {
+      "range": "I147",
+      "formula": "=MMULT('L matrix'!B147:MH147,$D$2:$D$346)"
+    },
+    "Footprint sectors!I148": {
+      "range": "I148",
+      "formula": "=MMULT('L matrix'!B148:MH148,$D$2:$D$346)"
+    },
+    "Footprint sectors!I149": {
+      "range": "I149",
+      "formula": "=MMULT('L matrix'!B149:MH149,$D$2:$D$346)"
+    },
+    "Footprint sectors!I150": {
+      "range": "I150",
+      "formula": "=MMULT('L matrix'!B150:MH150,$D$2:$D$346)"
+    },
+    "Footprint sectors!I151": {
+      "range": "I151",
+      "formula": "=MMULT('L matrix'!B151:MH151,$D$2:$D$346)"
+    },
+    "Footprint sectors!I152": {
+      "range": "I152",
+      "formula": "=MMULT('L matrix'!B152:MH152,$D$2:$D$346)"
+    },
+    "Footprint sectors!I153": {
+      "range": "I153",
+      "formula": "=MMULT('L matrix'!B153:MH153,$D$2:$D$346)"
+    },
+    "Footprint sectors!I154": {
+      "range": "I154",
+      "formula": "=MMULT('L matrix'!B154:MH154,$D$2:$D$346)"
+    },
+    "Footprint sectors!I155": {
+      "range": "I155",
+      "formula": "=MMULT('L matrix'!B155:MH155,$D$2:$D$346)"
+    },
+    "Footprint sectors!I156": {
+      "range": "I156",
+      "formula": "=MMULT('L matrix'!B156:MH156,$D$2:$D$346)"
+    },
+    "Footprint sectors!I157": {
+      "range": "I157",
+      "formula": "=MMULT('L matrix'!B157:MH157,$D$2:$D$346)"
+    },
+    "Footprint sectors!I158": {
+      "range": "I158",
+      "formula": "=MMULT('L matrix'!B158:MH158,$D$2:$D$346)"
+    },
+    "Footprint sectors!I159": {
+      "range": "I159",
+      "formula": "=MMULT('L matrix'!B159:MH159,$D$2:$D$346)"
+    },
+    "Footprint sectors!I160": {
+      "range": "I160",
+      "formula": "=MMULT('L matrix'!B160:MH160,$D$2:$D$346)"
+    },
+    "Footprint sectors!I161": {
+      "range": "I161",
+      "formula": "=MMULT('L matrix'!B161:MH161,$D$2:$D$346)"
+    },
+    "Footprint sectors!I162": {
+      "range": "I162",
+      "formula": "=MMULT('L matrix'!B162:MH162,$D$2:$D$346)"
+    },
+    "Footprint sectors!I163": {
+      "range": "I163",
+      "formula": "=MMULT('L matrix'!B163:MH163,$D$2:$D$346)"
+    },
+    "Footprint sectors!I164": {
+      "range": "I164",
+      "formula": "=MMULT('L matrix'!B164:MH164,$D$2:$D$346)"
+    },
+    "Footprint sectors!I165": {
+      "range": "I165",
+      "formula": "=MMULT('L matrix'!B165:MH165,$D$2:$D$346)"
+    },
+    "Footprint sectors!I166": {
+      "range": "I166",
+      "formula": "=MMULT('L matrix'!B166:MH166,$D$2:$D$346)"
+    },
+    "Footprint sectors!I167": {
+      "range": "I167",
+      "formula": "=MMULT('L matrix'!B167:MH167,$D$2:$D$346)"
+    },
+    "Footprint sectors!I168": {
+      "range": "I168",
+      "formula": "=MMULT('L matrix'!B168:MH168,$D$2:$D$346)"
+    },
+    "Footprint sectors!I169": {
+      "range": "I169",
+      "formula": "=MMULT('L matrix'!B169:MH169,$D$2:$D$346)"
+    },
+    "Footprint sectors!I170": {
+      "range": "I170",
+      "formula": "=MMULT('L matrix'!B170:MH170,$D$2:$D$346)"
+    },
+    "Footprint sectors!I171": {
+      "range": "I171",
+      "formula": "=MMULT('L matrix'!B171:MH171,$D$2:$D$346)"
+    },
+    "Footprint sectors!I172": {
+      "range": "I172",
+      "formula": "=MMULT('L matrix'!B172:MH172,$D$2:$D$346)"
+    },
+    "Footprint sectors!I173": {
+      "range": "I173",
+      "formula": "=MMULT('L matrix'!B173:MH173,$D$2:$D$346)"
+    },
+    "Footprint sectors!I174": {
+      "range": "I174",
+      "formula": "=MMULT('L matrix'!B174:MH174,$D$2:$D$346)"
+    },
+    "Footprint sectors!I175": {
+      "range": "I175",
+      "formula": "=MMULT('L matrix'!B175:MH175,$D$2:$D$346)"
+    },
+    "Footprint sectors!I176": {
+      "range": "I176",
+      "formula": "=MMULT('L matrix'!B176:MH176,$D$2:$D$346)"
+    },
+    "Footprint sectors!I177": {
+      "range": "I177",
+      "formula": "=MMULT('L matrix'!B177:MH177,$D$2:$D$346)"
+    },
+    "Footprint sectors!I178": {
+      "range": "I178",
+      "formula": "=MMULT('L matrix'!B178:MH178,$D$2:$D$346)"
+    },
+    "Footprint sectors!I179": {
+      "range": "I179",
+      "formula": "=MMULT('L matrix'!B179:MH179,$D$2:$D$346)"
+    },
+    "Footprint sectors!I180": {
+      "range": "I180",
+      "formula": "=MMULT('L matrix'!B180:MH180,$D$2:$D$346)"
+    },
+    "Footprint sectors!I181": {
+      "range": "I181",
+      "formula": "=MMULT('L matrix'!B181:MH181,$D$2:$D$346)"
+    },
+    "Footprint sectors!I182": {
+      "range": "I182",
+      "formula": "=MMULT('L matrix'!B182:MH182,$D$2:$D$346)"
+    },
+    "Footprint sectors!I183": {
+      "range": "I183",
+      "formula": "=MMULT('L matrix'!B183:MH183,$D$2:$D$346)"
+    },
+    "Footprint sectors!I184": {
+      "range": "I184",
+      "formula": "=MMULT('L matrix'!B184:MH184,$D$2:$D$346)"
+    },
+    "Footprint sectors!I185": {
+      "range": "I185",
+      "formula": "=MMULT('L matrix'!B185:MH185,$D$2:$D$346)"
+    },
+    "Footprint sectors!I186": {
+      "range": "I186",
+      "formula": "=MMULT('L matrix'!B186:MH186,$D$2:$D$346)"
+    },
+    "Footprint sectors!I187": {
+      "range": "I187",
+      "formula": "=MMULT('L matrix'!B187:MH187,$D$2:$D$346)"
+    },
+    "Footprint sectors!I188": {
+      "range": "I188",
+      "formula": "=MMULT('L matrix'!B188:MH188,$D$2:$D$346)"
+    },
+    "Footprint sectors!I189": {
+      "range": "I189",
+      "formula": "=MMULT('L matrix'!B189:MH189,$D$2:$D$346)"
+    },
+    "Footprint sectors!I190": {
+      "range": "I190",
+      "formula": "=MMULT('L matrix'!B190:MH190,$D$2:$D$346)"
+    },
+    "Footprint sectors!I191": {
+      "range": "I191",
+      "formula": "=MMULT('L matrix'!B191:MH191,$D$2:$D$346)"
+    },
+    "Footprint sectors!I192": {
+      "range": "I192",
+      "formula": "=MMULT('L matrix'!B192:MH192,$D$2:$D$346)"
+    },
+    "Footprint sectors!I193": {
+      "range": "I193",
+      "formula": "=MMULT('L matrix'!B193:MH193,$D$2:$D$346)"
+    },
+    "Footprint sectors!I194": {
+      "range": "I194",
+      "formula": "=MMULT('L matrix'!B194:MH194,$D$2:$D$346)"
+    },
+    "Footprint sectors!I195": {
+      "range": "I195",
+      "formula": "=MMULT('L matrix'!B195:MH195,$D$2:$D$346)"
+    },
+    "Footprint sectors!I196": {
+      "range": "I196",
+      "formula": "=MMULT('L matrix'!B196:MH196,$D$2:$D$346)"
+    },
+    "Footprint sectors!I197": {
+      "range": "I197",
+      "formula": "=MMULT('L matrix'!B197:MH197,$D$2:$D$346)"
+    },
+    "Footprint sectors!I198": {
+      "range": "I198",
+      "formula": "=MMULT('L matrix'!B198:MH198,$D$2:$D$346)"
+    },
+    "Footprint sectors!I199": {
+      "range": "I199",
+      "formula": "=MMULT('L matrix'!B199:MH199,$D$2:$D$346)"
+    },
+    "Footprint sectors!I200": {
+      "range": "I200",
+      "formula": "=MMULT('L matrix'!B200:MH200,$D$2:$D$346)"
+    },
+    "Footprint sectors!I201": {
+      "range": "I201",
+      "formula": "=MMULT('L matrix'!B201:MH201,$D$2:$D$346)"
+    },
+    "Footprint sectors!I202": {
+      "range": "I202",
+      "formula": "=MMULT('L matrix'!B202:MH202,$D$2:$D$346)"
+    },
+    "Footprint sectors!I203": {
+      "range": "I203",
+      "formula": "=MMULT('L matrix'!B203:MH203,$D$2:$D$346)"
+    },
+    "Footprint sectors!I204": {
+      "range": "I204",
+      "formula": "=MMULT('L matrix'!B204:MH204,$D$2:$D$346)"
+    },
+    "Footprint sectors!I205": {
+      "range": "I205",
+      "formula": "=MMULT('L matrix'!B205:MH205,$D$2:$D$346)"
+    },
+    "Footprint sectors!I206": {
+      "range": "I206",
+      "formula": "=MMULT('L matrix'!B206:MH206,$D$2:$D$346)"
+    },
+    "Footprint sectors!I207": {
+      "range": "I207",
+      "formula": "=MMULT('L matrix'!B207:MH207,$D$2:$D$346)"
+    },
+    "Footprint sectors!I208": {
+      "range": "I208",
+      "formula": "=MMULT('L matrix'!B208:MH208,$D$2:$D$346)"
+    },
+    "Footprint sectors!I209": {
+      "range": "I209",
+      "formula": "=MMULT('L matrix'!B209:MH209,$D$2:$D$346)"
+    },
+    "Footprint sectors!I210": {
+      "range": "I210",
+      "formula": "=MMULT('L matrix'!B210:MH210,$D$2:$D$346)"
+    },
+    "Footprint sectors!I211": {
+      "range": "I211",
+      "formula": "=MMULT('L matrix'!B211:MH211,$D$2:$D$346)"
+    },
+    "Footprint sectors!I212": {
+      "range": "I212",
+      "formula": "=MMULT('L matrix'!B212:MH212,$D$2:$D$346)"
+    },
+    "Footprint sectors!I213": {
+      "range": "I213",
+      "formula": "=MMULT('L matrix'!B213:MH213,$D$2:$D$346)"
+    },
+    "Footprint sectors!I214": {
+      "range": "I214",
+      "formula": "=MMULT('L matrix'!B214:MH214,$D$2:$D$346)"
+    },
+    "Footprint sectors!I215": {
+      "range": "I215",
+      "formula": "=MMULT('L matrix'!B215:MH215,$D$2:$D$346)"
+    },
+    "Footprint sectors!I216": {
+      "range": "I216",
+      "formula": "=MMULT('L matrix'!B216:MH216,$D$2:$D$346)"
+    },
+    "Footprint sectors!I217": {
+      "range": "I217",
+      "formula": "=MMULT('L matrix'!B217:MH217,$D$2:$D$346)"
+    },
+    "Footprint sectors!I218": {
+      "range": "I218",
+      "formula": "=MMULT('L matrix'!B218:MH218,$D$2:$D$346)"
+    },
+    "Footprint sectors!I219": {
+      "range": "I219",
+      "formula": "=MMULT('L matrix'!B219:MH219,$D$2:$D$346)"
+    },
+    "Footprint sectors!I220": {
+      "range": "I220",
+      "formula": "=MMULT('L matrix'!B220:MH220,$D$2:$D$346)"
+    },
+    "Footprint sectors!I221": {
+      "range": "I221",
+      "formula": "=MMULT('L matrix'!B221:MH221,$D$2:$D$346)"
+    },
+    "Footprint sectors!I222": {
+      "range": "I222",
+      "formula": "=MMULT('L matrix'!B222:MH222,$D$2:$D$346)"
+    },
+    "Footprint sectors!I223": {
+      "range": "I223",
+      "formula": "=MMULT('L matrix'!B223:MH223,$D$2:$D$346)"
+    },
+    "Footprint sectors!I224": {
+      "range": "I224",
+      "formula": "=MMULT('L matrix'!B224:MH224,$D$2:$D$346)"
+    },
+    "Footprint sectors!I225": {
+      "range": "I225",
+      "formula": "=MMULT('L matrix'!B225:MH225,$D$2:$D$346)"
+    },
+    "Footprint sectors!I226": {
+      "range": "I226",
+      "formula": "=MMULT('L matrix'!B226:MH226,$D$2:$D$346)"
+    },
+    "Footprint sectors!I227": {
+      "range": "I227",
+      "formula": "=MMULT('L matrix'!B227:MH227,$D$2:$D$346)"
+    },
+    "Footprint sectors!I228": {
+      "range": "I228",
+      "formula": "=MMULT('L matrix'!B228:MH228,$D$2:$D$346)"
+    },
+    "Footprint sectors!I229": {
+      "range": "I229",
+      "formula": "=MMULT('L matrix'!B229:MH229,$D$2:$D$346)"
+    },
+    "Footprint sectors!I230": {
+      "range": "I230",
+      "formula": "=MMULT('L matrix'!B230:MH230,$D$2:$D$346)"
+    },
+    "Footprint sectors!I231": {
+      "range": "I231",
+      "formula": "=MMULT('L matrix'!B231:MH231,$D$2:$D$346)"
+    },
+    "Footprint sectors!I232": {
+      "range": "I232",
+      "formula": "=MMULT('L matrix'!B232:MH232,$D$2:$D$346)"
+    },
+    "Footprint sectors!I233": {
+      "range": "I233",
+      "formula": "=MMULT('L matrix'!B233:MH233,$D$2:$D$346)"
+    },
+    "Footprint sectors!I234": {
+      "range": "I234",
+      "formula": "=MMULT('L matrix'!B234:MH234,$D$2:$D$346)"
+    },
+    "Footprint sectors!I235": {
+      "range": "I235",
+      "formula": "=MMULT('L matrix'!B235:MH235,$D$2:$D$346)"
+    },
+    "Footprint sectors!I236": {
+      "range": "I236",
+      "formula": "=MMULT('L matrix'!B236:MH236,$D$2:$D$346)"
+    },
+    "Footprint sectors!I237": {
+      "range": "I237",
+      "formula": "=MMULT('L matrix'!B237:MH237,$D$2:$D$346)"
+    },
+    "Footprint sectors!I238": {
+      "range": "I238",
+      "formula": "=MMULT('L matrix'!B238:MH238,$D$2:$D$346)"
+    },
+    "Footprint sectors!I239": {
+      "range": "I239",
+      "formula": "=MMULT('L matrix'!B239:MH239,$D$2:$D$346)"
+    },
+    "Footprint sectors!I240": {
+      "range": "I240",
+      "formula": "=MMULT('L matrix'!B240:MH240,$D$2:$D$346)"
+    },
+    "Footprint sectors!I241": {
+      "range": "I241",
+      "formula": "=MMULT('L matrix'!B241:MH241,$D$2:$D$346)"
+    },
+    "Footprint sectors!I242": {
+      "range": "I242",
+      "formula": "=MMULT('L matrix'!B242:MH242,$D$2:$D$346)"
+    },
+    "Footprint sectors!I243": {
+      "range": "I243",
+      "formula": "=MMULT('L matrix'!B243:MH243,$D$2:$D$346)"
+    },
+    "Footprint sectors!I244": {
+      "range": "I244",
+      "formula": "=MMULT('L matrix'!B244:MH244,$D$2:$D$346)"
+    },
+    "Footprint sectors!I245": {
+      "range": "I245",
+      "formula": "=MMULT('L matrix'!B245:MH245,$D$2:$D$346)"
+    },
+    "Footprint sectors!I246": {
+      "range": "I246",
+      "formula": "=MMULT('L matrix'!B246:MH246,$D$2:$D$346)"
+    },
+    "Footprint sectors!I247": {
+      "range": "I247",
+      "formula": "=MMULT('L matrix'!B247:MH247,$D$2:$D$346)"
+    },
+    "Footprint sectors!I248": {
+      "range": "I248",
+      "formula": "=MMULT('L matrix'!B248:MH248,$D$2:$D$346)"
+    },
+    "Footprint sectors!I249": {
+      "range": "I249",
+      "formula": "=MMULT('L matrix'!B249:MH249,$D$2:$D$346)"
+    },
+    "Footprint sectors!I250": {
+      "range": "I250",
+      "formula": "=MMULT('L matrix'!B250:MH250,$D$2:$D$346)"
+    },
+    "Footprint sectors!I251": {
+      "range": "I251",
+      "formula": "=MMULT('L matrix'!B251:MH251,$D$2:$D$346)"
+    },
+    "Footprint sectors!I252": {
+      "range": "I252",
+      "formula": "=MMULT('L matrix'!B252:MH252,$D$2:$D$346)"
+    },
+    "Footprint sectors!I253": {
+      "range": "I253",
+      "formula": "=MMULT('L matrix'!B253:MH253,$D$2:$D$346)"
+    },
+    "Footprint sectors!I254": {
+      "range": "I254",
+      "formula": "=MMULT('L matrix'!B254:MH254,$D$2:$D$346)"
+    },
+    "Footprint sectors!I255": {
+      "range": "I255",
+      "formula": "=MMULT('L matrix'!B255:MH255,$D$2:$D$346)"
+    },
+    "Footprint sectors!I256": {
+      "range": "I256",
+      "formula": "=MMULT('L matrix'!B256:MH256,$D$2:$D$346)"
+    },
+    "Footprint sectors!I257": {
+      "range": "I257",
+      "formula": "=MMULT('L matrix'!B257:MH257,$D$2:$D$346)"
+    },
+    "Footprint sectors!I258": {
+      "range": "I258",
+      "formula": "=MMULT('L matrix'!B258:MH258,$D$2:$D$346)"
+    },
+    "Footprint sectors!I259": {
+      "range": "I259",
+      "formula": "=MMULT('L matrix'!B259:MH259,$D$2:$D$346)"
+    },
+    "Footprint sectors!I260": {
+      "range": "I260",
+      "formula": "=MMULT('L matrix'!B260:MH260,$D$2:$D$346)"
+    },
+    "Footprint sectors!I261": {
+      "range": "I261",
+      "formula": "=MMULT('L matrix'!B261:MH261,$D$2:$D$346)"
+    },
+    "Footprint sectors!I262": {
+      "range": "I262",
+      "formula": "=MMULT('L matrix'!B262:MH262,$D$2:$D$346)"
+    },
+    "Footprint sectors!I263": {
+      "range": "I263",
+      "formula": "=MMULT('L matrix'!B263:MH263,$D$2:$D$346)"
+    },
+    "Footprint sectors!I264": {
+      "range": "I264",
+      "formula": "=MMULT('L matrix'!B264:MH264,$D$2:$D$346)"
+    },
+    "Footprint sectors!I265": {
+      "range": "I265",
+      "formula": "=MMULT('L matrix'!B265:MH265,$D$2:$D$346)"
+    },
+    "Footprint sectors!I266": {
+      "range": "I266",
+      "formula": "=MMULT('L matrix'!B266:MH266,$D$2:$D$346)"
+    },
+    "Footprint sectors!I267": {
+      "range": "I267",
+      "formula": "=MMULT('L matrix'!B267:MH267,$D$2:$D$346)"
+    },
+    "Footprint sectors!I268": {
+      "range": "I268",
+      "formula": "=MMULT('L matrix'!B268:MH268,$D$2:$D$346)"
+    },
+    "Footprint sectors!I269": {
+      "range": "I269",
+      "formula": "=MMULT('L matrix'!B269:MH269,$D$2:$D$346)"
+    },
+    "Footprint sectors!I270": {
+      "range": "I270",
+      "formula": "=MMULT('L matrix'!B270:MH270,$D$2:$D$346)"
+    },
+    "Footprint sectors!I271": {
+      "range": "I271",
+      "formula": "=MMULT('L matrix'!B271:MH271,$D$2:$D$346)"
+    },
+    "Footprint sectors!I272": {
+      "range": "I272",
+      "formula": "=MMULT('L matrix'!B272:MH272,$D$2:$D$346)"
+    },
+    "Footprint sectors!I273": {
+      "range": "I273",
+      "formula": "=MMULT('L matrix'!B273:MH273,$D$2:$D$346)"
+    },
+    "Footprint sectors!I274": {
+      "range": "I274",
+      "formula": "=MMULT('L matrix'!B274:MH274,$D$2:$D$346)"
+    },
+    "Footprint sectors!I275": {
+      "range": "I275",
+      "formula": "=MMULT('L matrix'!B275:MH275,$D$2:$D$346)"
+    },
+    "Footprint sectors!I276": {
+      "range": "I276",
+      "formula": "=MMULT('L matrix'!B276:MH276,$D$2:$D$346)"
+    },
+    "Footprint sectors!I277": {
+      "range": "I277",
+      "formula": "=MMULT('L matrix'!B277:MH277,$D$2:$D$346)"
+    },
+    "Footprint sectors!I278": {
+      "range": "I278",
+      "formula": "=MMULT('L matrix'!B278:MH278,$D$2:$D$346)"
+    },
+    "Footprint sectors!I279": {
+      "range": "I279",
+      "formula": "=MMULT('L matrix'!B279:MH279,$D$2:$D$346)"
+    },
+    "Footprint sectors!I280": {
+      "range": "I280",
+      "formula": "=MMULT('L matrix'!B280:MH280,$D$2:$D$346)"
+    },
+    "Footprint sectors!I281": {
+      "range": "I281",
+      "formula": "=MMULT('L matrix'!B281:MH281,$D$2:$D$346)"
+    },
+    "Footprint sectors!I282": {
+      "range": "I282",
+      "formula": "=MMULT('L matrix'!B282:MH282,$D$2:$D$346)"
+    },
+    "Footprint sectors!I283": {
+      "range": "I283",
+      "formula": "=MMULT('L matrix'!B283:MH283,$D$2:$D$346)"
+    },
+    "Footprint sectors!I284": {
+      "range": "I284",
+      "formula": "=MMULT('L matrix'!B284:MH284,$D$2:$D$346)"
+    },
+    "Footprint sectors!I285": {
+      "range": "I285",
+      "formula": "=MMULT('L matrix'!B285:MH285,$D$2:$D$346)"
+    },
+    "Footprint sectors!I286": {
+      "range": "I286",
+      "formula": "=MMULT('L matrix'!B286:MH286,$D$2:$D$346)"
+    },
+    "Footprint sectors!I287": {
+      "range": "I287",
+      "formula": "=MMULT('L matrix'!B287:MH287,$D$2:$D$346)"
+    },
+    "Footprint sectors!I288": {
+      "range": "I288",
+      "formula": "=MMULT('L matrix'!B288:MH288,$D$2:$D$346)"
+    },
+    "Footprint sectors!I289": {
+      "range": "I289",
+      "formula": "=MMULT('L matrix'!B289:MH289,$D$2:$D$346)"
+    },
+    "Footprint sectors!I290": {
+      "range": "I290",
+      "formula": "=MMULT('L matrix'!B290:MH290,$D$2:$D$346)"
+    },
+    "Footprint sectors!I291": {
+      "range": "I291",
+      "formula": "=MMULT('L matrix'!B291:MH291,$D$2:$D$346)"
+    },
+    "Footprint sectors!I292": {
+      "range": "I292",
+      "formula": "=MMULT('L matrix'!B292:MH292,$D$2:$D$346)"
+    },
+    "Footprint sectors!I293": {
+      "range": "I293",
+      "formula": "=MMULT('L matrix'!B293:MH293,$D$2:$D$346)"
+    },
+    "Footprint sectors!I294": {
+      "range": "I294",
+      "formula": "=MMULT('L matrix'!B294:MH294,$D$2:$D$346)"
+    },
+    "Footprint sectors!I295": {
+      "range": "I295",
+      "formula": "=MMULT('L matrix'!B295:MH295,$D$2:$D$346)"
+    },
+    "Footprint sectors!I296": {
+      "range": "I296",
+      "formula": "=MMULT('L matrix'!B296:MH296,$D$2:$D$346)"
+    },
+    "Footprint sectors!I297": {
+      "range": "I297",
+      "formula": "=MMULT('L matrix'!B297:MH297,$D$2:$D$346)"
+    },
+    "Footprint sectors!I298": {
+      "range": "I298",
+      "formula": "=MMULT('L matrix'!B298:MH298,$D$2:$D$346)"
+    },
+    "Footprint sectors!I299": {
+      "range": "I299",
+      "formula": "=MMULT('L matrix'!B299:MH299,$D$2:$D$346)"
+    },
+    "Footprint sectors!I300": {
+      "range": "I300",
+      "formula": "=MMULT('L matrix'!B300:MH300,$D$2:$D$346)"
+    },
+    "Footprint sectors!I301": {
+      "range": "I301",
+      "formula": "=MMULT('L matrix'!B301:MH301,$D$2:$D$346)"
+    },
+    "Footprint sectors!I302": {
+      "range": "I302",
+      "formula": "=MMULT('L matrix'!B302:MH302,$D$2:$D$346)"
+    },
+    "Footprint sectors!I303": {
+      "range": "I303",
+      "formula": "=MMULT('L matrix'!B303:MH303,$D$2:$D$346)"
+    },
+    "Footprint sectors!I304": {
+      "range": "I304",
+      "formula": "=MMULT('L matrix'!B304:MH304,$D$2:$D$346)"
+    },
+    "Footprint sectors!I305": {
+      "range": "I305",
+      "formula": "=MMULT('L matrix'!B305:MH305,$D$2:$D$346)"
+    },
+    "Footprint sectors!I306": {
+      "range": "I306",
+      "formula": "=MMULT('L matrix'!B306:MH306,$D$2:$D$346)"
+    },
+    "Footprint sectors!I307": {
+      "range": "I307",
+      "formula": "=MMULT('L matrix'!B307:MH307,$D$2:$D$346)"
+    },
+    "Footprint sectors!I308": {
+      "range": "I308",
+      "formula": "=MMULT('L matrix'!B308:MH308,$D$2:$D$346)"
+    },
+    "Footprint sectors!I309": {
+      "range": "I309",
+      "formula": "=MMULT('L matrix'!B309:MH309,$D$2:$D$346)"
+    },
+    "Footprint sectors!I310": {
+      "range": "I310",
+      "formula": "=MMULT('L matrix'!B310:MH310,$D$2:$D$346)"
+    },
+    "Footprint sectors!I311": {
+      "range": "I311",
+      "formula": "=MMULT('L matrix'!B311:MH311,$D$2:$D$346)"
+    },
+    "Footprint sectors!I312": {
+      "range": "I312",
+      "formula": "=MMULT('L matrix'!B312:MH312,$D$2:$D$346)"
+    },
+    "Footprint sectors!I313": {
+      "range": "I313",
+      "formula": "=MMULT('L matrix'!B313:MH313,$D$2:$D$346)"
+    },
+    "Footprint sectors!I314": {
+      "range": "I314",
+      "formula": "=MMULT('L matrix'!B314:MH314,$D$2:$D$346)"
+    },
+    "Footprint sectors!I315": {
+      "range": "I315",
+      "formula": "=MMULT('L matrix'!B315:MH315,$D$2:$D$346)"
+    },
+    "Footprint sectors!I316": {
+      "range": "I316",
+      "formula": "=MMULT('L matrix'!B316:MH316,$D$2:$D$346)"
+    },
+    "Footprint sectors!I317": {
+      "range": "I317",
+      "formula": "=MMULT('L matrix'!B317:MH317,$D$2:$D$346)"
+    },
+    "Footprint sectors!I318": {
+      "range": "I318",
+      "formula": "=MMULT('L matrix'!B318:MH318,$D$2:$D$346)"
+    },
+    "Footprint sectors!I319": {
+      "range": "I319",
+      "formula": "=MMULT('L matrix'!B319:MH319,$D$2:$D$346)"
+    },
+    "Footprint sectors!I320": {
+      "range": "I320",
+      "formula": "=MMULT('L matrix'!B320:MH320,$D$2:$D$346)"
+    },
+    "Footprint sectors!I321": {
+      "range": "I321",
+      "formula": "=MMULT('L matrix'!B321:MH321,$D$2:$D$346)"
+    },
+    "Footprint sectors!I322": {
+      "range": "I322",
+      "formula": "=MMULT('L matrix'!B322:MH322,$D$2:$D$346)"
+    },
+    "Footprint sectors!I323": {
+      "range": "I323",
+      "formula": "=MMULT('L matrix'!B323:MH323,$D$2:$D$346)"
+    },
+    "Footprint sectors!I324": {
+      "range": "I324",
+      "formula": "=MMULT('L matrix'!B324:MH324,$D$2:$D$346)"
+    },
+    "Footprint sectors!I325": {
+      "range": "I325",
+      "formula": "=MMULT('L matrix'!B325:MH325,$D$2:$D$346)"
+    },
+    "Footprint sectors!I326": {
+      "range": "I326",
+      "formula": "=MMULT('L matrix'!B326:MH326,$D$2:$D$346)"
+    },
+    "Footprint sectors!I327": {
+      "range": "I327",
+      "formula": "=MMULT('L matrix'!B327:MH327,$D$2:$D$346)"
+    },
+    "Footprint sectors!I328": {
+      "range": "I328",
+      "formula": "=MMULT('L matrix'!B328:MH328,$D$2:$D$346)"
+    },
+    "Footprint sectors!I329": {
+      "range": "I329",
+      "formula": "=MMULT('L matrix'!B329:MH329,$D$2:$D$346)"
+    },
+    "Footprint sectors!I330": {
+      "range": "I330",
+      "formula": "=MMULT('L matrix'!B330:MH330,$D$2:$D$346)"
+    },
+    "Footprint sectors!I331": {
+      "range": "I331",
+      "formula": "=MMULT('L matrix'!B331:MH331,$D$2:$D$346)"
+    },
+    "Footprint sectors!I332": {
+      "range": "I332",
+      "formula": "=MMULT('L matrix'!B332:MH332,$D$2:$D$346)"
+    },
+    "Footprint sectors!I333": {
+      "range": "I333",
+      "formula": "=MMULT('L matrix'!B333:MH333,$D$2:$D$346)"
+    },
+    "Footprint sectors!I334": {
+      "range": "I334",
+      "formula": "=MMULT('L matrix'!B334:MH334,$D$2:$D$346)"
+    },
+    "Footprint sectors!I335": {
+      "range": "I335",
+      "formula": "=MMULT('L matrix'!B335:MH335,$D$2:$D$346)"
+    },
+    "Footprint sectors!I336": {
+      "range": "I336",
+      "formula": "=MMULT('L matrix'!B336:MH336,$D$2:$D$346)"
+    },
+    "Footprint sectors!I337": {
+      "range": "I337",
+      "formula": "=MMULT('L matrix'!B337:MH337,$D$2:$D$346)"
+    },
+    "Footprint sectors!I338": {
+      "range": "I338",
+      "formula": "=MMULT('L matrix'!B338:MH338,$D$2:$D$346)"
+    },
+    "Footprint sectors!I339": {
+      "range": "I339",
+      "formula": "=MMULT('L matrix'!B339:MH339,$D$2:$D$346)"
+    },
+    "Footprint sectors!I340": {
+      "range": "I340",
+      "formula": "=MMULT('L matrix'!B340:MH340,$D$2:$D$346)"
+    },
+    "Footprint sectors!I341": {
+      "range": "I341",
+      "formula": "=MMULT('L matrix'!B341:MH341,$D$2:$D$346)"
+    },
+    "Footprint sectors!I342": {
+      "range": "I342",
+      "formula": "=MMULT('L matrix'!B342:MH342,$D$2:$D$346)"
+    },
+    "Footprint sectors!I343": {
+      "range": "I343",
+      "formula": "=MMULT('L matrix'!B343:MH343,$D$2:$D$346)"
+    },
+    "Footprint sectors!I344": {
+      "range": "I344",
+      "formula": "=MMULT('L matrix'!B344:MH344,$D$2:$D$346)"
+    },
+    "Footprint sectors!I345": {
+      "range": "I345",
+      "formula": "=MMULT('L matrix'!B345:MH345,$D$2:$D$346)"
+    },
+    "Footprint sectors!I346": {
+      "range": "I346",
+      "formula": "=MMULT('L matrix'!B346:MH346,$D$2:$D$346)"
+    }
+  },
+  "remaining_limitations": [
+    "2018 price basis",
+    "purchaser/basic-price valuation",
+    "insurance service charge",
+    "household direct combustion boundary",
+    "Australian and international per-capita comparisons not yet completed"
+  ]
+}
