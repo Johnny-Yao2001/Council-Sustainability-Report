@@ -28,3 +28,7 @@ All supplied input worksheet XML (including the user's Satellite sum row) is pre
 ## Remaining assessment work
 
 The required Australian and other-country per-capita comparison is **not yet completed**. No figure here demonstrates that comparison. Ensure compatible CO2-e/CO2, consumption/territorial, year and system boundaries before adding it. Price-year conversion, purchaser/basic-price valuation, insurance service-charge valuation and household direct combustion remain limitations.
+
+### 8 November update
+
+The main report now contains a contextual country comparison (Figure 2); national consumption-based CO2 data and source records are in `Comparison data`, `Comparison history`, `Sources`, and `../sources/`. This does not resolve a harmonised all-GHG comparison. Existing evidence images are historical 7 November captures; their “comparison pending” statements describe that capture stage, not the latest report. `validation.json` has been refreshed for the current workbook; its SHA256 identifies the workbook audited.

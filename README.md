@@ -35,4 +35,12 @@ Baseline provisional supply-chain estimate: **9.543 t CO2-e/person/year**. Nomin
 
 The `evidence/` directory contains PNG snapshots exported from those actual spreadsheet views, a PDF of the same views, a read-only audit report, and source/caption notes. These are LibreOffice Calc renderings of the Excel workbook, not Microsoft Excel application-window screenshots. Representative matrix excerpts are explicitly labelled; a whole 345 × 345 matrix is intentionally not shrunk into one image. The Word supplementary section includes these images.
 
-Australian/international per-capita comparison (Lecture 10, p. 14) remains a required **unfinished** task. No comparison values or charts have been invented; the evidence does not claim that requirement is complete.
+A contextual Australian/international comparison is now provided in Figure 2 (see the 8 November update below). The stricter harmonised all-GHG comparison remains unresolved; the original calculation-evidence images describe the earlier capture stage.
+
+## Australian and international context (8 November 2026)
+
+The latest user Word version (`be4b567`) is the editing baseline; its 14 existing images are retained. Figures 1 and 2 are now real result images. Main-text duplicate tables/template notes and unused optional material have been removed; detailed supporting material remains in Labels.xlsx and the supplementary section. Both report filenames are synchronised with v2.
+
+`Comparison data`, `Comparison history` and `Sources` in **Labels.xlsx** record OWID/Global Carbon Budget national consumption-based CO2 references (2018 primary comparison; 1990–2023 trends; 2023 latest available values retained). All pre-existing worksheet XML/formulas and caches are unchanged. Figure 2 separates the personal CO2-e estimate from the CO2-only national references. This is **contextual comparison**, not a harmonised GHG ranking or a percentage reduction relative to the Australian average. The stricter same-gas/same-boundary comparison remains a limitation.
+
+Figures are in `figures/`. Exact source extract, definitions, URLs, verified source version/SHA256, access date and reference entries are in `sources/`. `writing_plan.md` and `sources/word_count.json` record approximate word count and unfinished sections; the 3,000-word limit remains the target. The older evidence captures retain their original capture date and supplementary provenance; the new comparison is Figure 2 in the main report.

@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "workbook_sha256": "7719bb599f2c727056dd9d3dd6531686c989b8a6b957e9ad8b4046f5c10e49f7",
+  "workbook_sha256": "ad55c6188288c86501bf4aeb2295f05d22ffc76b2bc9c104aad48dfa32e3c7f3",
   "provisional_t_co2e_per_person_year": 9.54302184706136,
   "independent_numpy_t_co2e": 9.543021847061356,
   "max_inverse_residual": 5.995204332975845e-15,
@@ -1412,6 +1412,6 @@
     "purchaser/basic-price valuation",
     "insurance service charge",
     "household direct combustion boundary",
-    "Australian and international per-capita comparisons not yet completed"
+    "National comparison uses CO2-only references; a harmonised all-GHG comparison remains unresolved"
   ]
 }

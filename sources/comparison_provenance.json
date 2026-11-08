@@ -1,0 +1,28 @@
+{
+  "publisher": "Our World in Data",
+  "dataset": "CO2 and Greenhouse Gas Emissions dataset",
+  "underlying_source": "Global Carbon Budget (2025); Population based on various sources (2024)",
+  "field": "consumption_co2_per_capita",
+  "unit": "tonnes CO2 per person per year",
+  "accounting": "Consumption-based; fossil fuels and industry; excludes land-use change and non-CO2 greenhouse gases",
+  "international_bunkers": "International aviation and shipping not allocated to individual countries, per GCB metadata",
+  "retrieved": "2026-11-08",
+  "repository_commit": "382ee6c662b0ece26e111f263b44c029afad7787",
+  "data_url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+  "version_url": "https://github.com/owid/co2-data/tree/382ee6c662b0ece26e111f263b44c029afad7787",
+  "original_download_sha256": "7f78e2b218ce4bb8c538bbec04fdc9a7982e8d40bff972e650df603899edd5f6",
+  "selected_extract": "sources/owid_consumption_co2_selected.csv",
+  "comparison_year": 2018,
+  "latest_country_year_in_download": 2023,
+  "country_selection": "Australia plus US, UK and Japan as high-income contexts; China and India as contrasting consumption contexts. Illustrative selection, not a world ranking.",
+  "personal_reference": {
+    "value": 9.54302184706136,
+    "unit": "t CO2-e/person/year",
+    "spending_period": "Nov 2025\u2013Oct 2026",
+    "model_year": 2018,
+    "scope": "Provisional private spending-driven footprint; not equivalent to national final-demand per capita."
+  },
+  "comparability": "Contextual comparison only. Do not calculate a percentage below national average, infer a like-for-like rank or reinterpret CO2-only references as CO2-e. Matching IO model year does not resolve spending price-year or coverage differences.",
+  "version_verified_by_sha256": true,
+  "immutable_data_url": "https://raw.githubusercontent.com/owid/co2-data/382ee6c662b0ece26e111f263b44c029afad7787/owid-co2-data.csv"
+}
