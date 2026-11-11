@@ -44,3 +44,12 @@ The latest user Word version (`be4b567`) is the editing baseline; its 14 existin
 `Comparison data`, `Comparison history` and `Sources` in **Labels.xlsx** record OWID/Global Carbon Budget national consumption-based CO2 references (2018 primary comparison; 1990–2023 trends; 2023 latest available values retained). All pre-existing worksheet XML/formulas and caches are unchanged. Figure 2 separates the personal CO2-e estimate from the CO2-only national references. This is **contextual comparison**, not a harmonised GHG ranking or a percentage reduction relative to the Australian average. The stricter same-gas/same-boundary comparison remains a limitation.
 
 Figures are in `figures/`. Exact source extract, definitions, URLs, verified source version/SHA256, access date and reference entries are in `sources/`. `writing_plan.md` and `sources/word_count.json` record approximate word count and unfinished sections; the 3,000-word limit remains the target. The older evidence captures retain their original capture date and supplementary provenance; the new comparison is Figure 2 in the main report.
+
+
+## Completed report (11 November 2026)
+
+The Word report is complete, with APA author–year references and approximately **2,629 words**, including visible main-figure text. Necessary assumptions and limitations are consolidated in Methodology rather than repeated throughout Results and Recommendations. Existing user supplementary images are retained. Cover name, student ID and actual submission date remain to be entered.
+
+A budget-neutral food substitution is documented in the new `Reduction scenario` worksheet of Labels.xlsx and `sources/reduction_scenario.json`: 20% less expenditure on fresh meat, poultry, milk and cheese releases AUD 384, split equally between legumes and vegetables. The modelled footprint changes from 9.543 to 9.018 t CO2e/year, a saving of 0.525 t (5.50%), with annual expenditure unchanged at AUD 29,760. This is a scenario within the same model, not a measured outcome. Original worksheet XML and user matrix formulas are preserved.
+
+See `sources/references_apa7.md` for the bibliography, citation/claim mapping and source-access record, `sources/final_report_checks.md` for rubric coverage, and `writing_plan.md` for final section counts.

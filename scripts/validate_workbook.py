@@ -36,6 +36,18 @@ res=float(np.max(np.abs(B@L-np.eye(345))));assert res<1e-10
 actual=w['Footprint summary']['B3'].value;assert abs(actual-expected)<1e-8
 assert abs(sum(r[6] for r in rows)-actual)<1e-8
 assert abs(sum(r[9] for r in rows)-actual)<1e-8
+scenario_checks=None
+if 'Reduction scenario' in w.sheetnames:
+ sr=list(w['Reduction scenario'].values)[1:346]
+ by=np.array([r[2] for r in sr],float)
+ change=np.array([r[3] for r in sr],float)
+ revised=np.array([r[4] for r in sr],float)
+ assert np.allclose(by,y*1e6) and np.allclose(revised,by+change)
+ assert abs(change.sum())<1e-9 and (revised>=0).all()
+ fs=float(m@(revised/1e6))*1000
+ assert abs(fs-w['Reduction scenario']['H347'].value)<1e-8
+ assert abs((actual-fs)-w['Reduction scenario']['G350'].value)<1e-8
+ scenario_checks={'budget_aud':float(by.sum()),'change_budget_aud':float(change.sum()),'scenario_t_co2e':fs,'saving_t_co2e':actual-fs}
 arrays={}
 for s in f:
  for row in s:
@@ -43,4 +55,4 @@ for s in f:
    if isinstance(c.value,ArrayFormula):
     assert '[1]' not in c.value.text,(s.title,c.coordinate)
     arrays[f'{s.title}!{c.coordinate}']={'range':c.value.ref,'formula':c.value.text}
-print(json.dumps({'status':'passed','workbook_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'provisional_t_co2e_per_person_year':actual,'independent_numpy_t_co2e':expected,'max_inverse_residual':res,'formula_errors':err,'excel_array_formulas':arrays,'remaining_limitations':['2018 price basis','purchaser/basic-price valuation','insurance service charge','household direct combustion boundary','National comparison uses CO2-only references; a harmonised all-GHG comparison remains unresolved']},indent=2,ensure_ascii=False))
+print(json.dumps({'status':'passed','workbook_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'provisional_t_co2e_per_person_year':actual,'independent_numpy_t_co2e':expected,'max_inverse_residual':res,'formula_errors':err,'scenario_checks':scenario_checks,'excel_array_formulas':arrays,'remaining_limitations':['2018 price basis','purchaser/basic-price valuation','insurance service charge','household direct combustion boundary','National comparison uses CO2-only references; a harmonised all-GHG comparison remains unresolved']},indent=2,ensure_ascii=False))

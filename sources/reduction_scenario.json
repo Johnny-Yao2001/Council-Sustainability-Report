@@ -1,0 +1,52 @@
+{
+  "baseline_t_co2e": 9.543021847061356,
+  "scenario_t_co2e": 9.018097126565275,
+  "saving_t_co2e": 0.524924720496081,
+  "saving_percent": 5.500613211503067,
+  "annual_budget_aud": 29760.0,
+  "reallocated_food_aud": 384.0,
+  "changes": [
+    {
+      "sector_id": 8,
+      "sector": "Legumes",
+      "baseline_aud": 0.0,
+      "change_aud": 192.0,
+      "scenario_aud": 192.0
+    },
+    {
+      "sector_id": 15,
+      "sector": "Vegetables",
+      "baseline_aud": 720.0,
+      "change_aud": 192.0,
+      "scenario_aud": 912.0
+    },
+    {
+      "sector_id": 75,
+      "sector": "Fresh meat",
+      "baseline_aud": 720.0,
+      "change_aud": -144.0,
+      "scenario_aud": 576.0
+    },
+    {
+      "sector_id": 77,
+      "sector": "Poultry, slaughtered",
+      "baseline_aud": 480.0,
+      "change_aud": -96.0,
+      "scenario_aud": 384.0
+    },
+    {
+      "sector_id": 79,
+      "sector": "Treated milk",
+      "baseline_aud": 480.0,
+      "change_aud": -96.0,
+      "scenario_aud": 384.0
+    },
+    {
+      "sector_id": 80,
+      "sector": "Cheese",
+      "baseline_aud": 240.0,
+      "change_aud": -48.0,
+      "scenario_aud": 192.0
+    }
+  ]
+}

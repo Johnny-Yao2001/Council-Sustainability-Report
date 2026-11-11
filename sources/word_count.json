@@ -1,26 +1,27 @@
 {
-  "date": "2026-11-08",
-  "main_paragraphs_including_headings_captions_and_short_placeholders": 1131,
+  "date": "2026-11-11",
+  "status": "completed body",
+  "main_paragraphs_including_headings_captions_equations": 2444,
   "visible_figure_text_approx": {
-    "Figure_1_sector_footprint": 78,
-    "Figure_2_per_capita_context": 124
+    "Figure_1_sector_footprint": 72,
+    "Figure_2_per_capita_context": 113
   },
-  "main_including_visible_figure_text_approx": 1333,
+  "main_including_visible_figure_text_approx": 2629,
   "by_section_paragraph_counts": {
-    "1. Introduction": 121,
-    "2. Methodology": 501,
-    "3. Results": 303,
-    "4. Discussion": 162,
-    "5. Recommendations": 39,
-    "6. Conclusion": 5
+    "1. Introduction": 283,
+    "2. Methodology": 663,
+    "3. Results": 459,
+    "4. Discussion": 395,
+    "5. Recommendations": 529,
+    "6. Conclusion": 115
   },
   "limit": 3000,
-  "remaining_approx": 1667,
+  "remaining_approx": 371,
   "excludes": [
     "cover",
     "contents",
     "references",
     "supplementary information"
   ],
-  "caution": "Approximate English-token count; not an authoritative Microsoft Word/Canvas count. Confirm local inclusion rules, especially captions, references and supplementary material."
+  "count_method": "Approximate English token count; includes main headings, equations, captions and text extracted from both figure PDFs. Verify final university counting convention."
 }

@@ -1,10 +1,16 @@
 {
   "status": "passed",
-  "workbook_sha256": "ad55c6188288c86501bf4aeb2295f05d22ffc76b2bc9c104aad48dfa32e3c7f3",
+  "workbook_sha256": "88ba4117d4510a318f399486133aec1e82f387a6e16553e0225580b1b658191b",
   "provisional_t_co2e_per_person_year": 9.54302184706136,
   "independent_numpy_t_co2e": 9.543021847061356,
   "max_inverse_residual": 5.995204332975845e-15,
   "formula_errors": [],
+  "scenario_checks": {
+    "budget_aud": 29760.0,
+    "change_budget_aud": 0.0,
+    "scenario_t_co2e": 9.018097126565275,
+    "saving_t_co2e": 0.5249247204960845
+  },
   "excel_array_formulas": {
     "𝐗 ̂!A1": {
       "range": "A1:MG345",

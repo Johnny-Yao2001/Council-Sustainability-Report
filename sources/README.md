@@ -33,3 +33,8 @@ Both national and personal measures use a consumption perspective, but their gas
 `word_count.json` records an approximate working count, including main headings/captions/equations and visible text from both figures. The count excludes cover, contents, References and supplementary material; this is not an authoritative statement of Canvas counting rules. `../writing_plan.md` records allocation and unfinished sections.
 
 To rebuild the two figures from the saved source extract and current cached workbook footprint, run `python scripts/build_comparison_figures.py` (pandas, NumPy, openpyxl and Matplotlib). This does not update the Word images automatically and does not download a newer data release. Refresh source extracts and bibliography together if changing the reference year or dataset version.
+
+
+## Completed report, 11 November 2026
+
+All sections have been completed. `references_apa7.md` consolidates the final six-entry bibliography and maps citations to claims; it also records actual source-access limits. `reduction_scenario.json` records the budget-neutral food substitution calculation. `final_report_checks.md` maps the completed content to the rubric. The earlier draft word allocation is superseded by word_count.json and ../writing_plan.md.
